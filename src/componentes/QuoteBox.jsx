@@ -15,7 +15,10 @@ const QuoteBox = () => {
                 <i className="comillas fa-solid fa-quote-left"></i>
                 <p>{phrase[index].quote}</p>
             </div>
-            <i className="btn fa-solid fa-circle-chevron-right" onClick={click}></i>
+            <div className="autor">
+                <h2>{phrase[index].author}</h2>
+                <i className="btn fa-solid fa-circle-chevron-right" onClick={click}></i>
+            </div>
         </div>
     );
 };
